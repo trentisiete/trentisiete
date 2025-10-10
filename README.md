@@ -87,9 +87,8 @@ README de perfil — cámbiame a tu gusto ✨
 </picture>
 
 <!-- Trophies (opcional: descomenta si te gusta el estilo) -->
-<!--
+
 <img src="https://github-profile-trophy.vercel.app/?username=trentisiete&no-bg=true&no-frame=true&margin-w=10" alt="Trophies" />
--->
 
 </div>
 
