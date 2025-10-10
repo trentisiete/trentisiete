@@ -147,4 +147,20 @@
 
 ---
 
-<sub>¿Te gustó este README? Puedes copiarlo y adaptarlo; créditos no necesarios (aunque se aprecian 😊).</sub>
+
+<div align="center">
+  <sub>
+    Este README se mostró en un <b>taller de GitHub</b> y cualquiera puede usarlo y adaptarlo.<br/>
+    Creado por <a href="https://gdguam.es">Google Developer Group On Campus (gdguam.es)</a>.
+  </sub>
+
+  <br/><br/>
+
+  <!-- Enlace a la página de Imgur por si alguien quiere abrirla en grande -->
+  <a href="https://imgur.com/gVhcJXL">
+    <!-- Usa el dominio directo de la imagen para que renderice en GitHub -->
+    <img src="https://i.imgur.com/gVhcJXL.png" alt="Taller de GitHub — GDG UAM" width="720"/>
+  </a>
+
+  <!-- Si no se ve la imagen, cambia .jpg por .png en la línea de arriba -->
+</div>
