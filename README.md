@@ -88,7 +88,7 @@
 
 ---
 
-### 📊 Mis stats (auto-actualizadas)
+### 📊 Mis stats
 
 <div align="center">
 
