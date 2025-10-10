@@ -8,8 +8,9 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/trentisiete?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/trentisiete?style=flat&label=Seguidores"></a>
-  <a href="https://github.com/trentisiete"><img alt="Stars" src="https://img.shields.io/github/stars/trentisiete?affiliations=OWNER%2CCOLLABORATOR&style=flat&label=Estrellas"></a>
+  <a href="https://github.com/trentisiete?tab=followers"><img alt="Seguidores" src="https://img.shields.io/github/followers/trentisiete?style=flat&label=Seguidores"></a>
+  <a href="https://github.com/trentisiete"><img alt="Estrellas" src="https://img.shields.io/github/stars/trentisiete?affiliations=OWNER%2CCOLLABORATOR&style=flat&label=Estrellas"></a>
+  <a href="https://gdguam.es"><img alt="GDG UAM" src="https://img.shields.io/badge/Website-gdguam.es-34A853?logo=google&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/TODO-linkedin/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Conecta-0A66C2?logo=linkedin&logoColor=white"></a>
   <a href="mailto:TODO-email"><img alt="Email" src="https://img.shields.io/badge/Contacto-Email-informational"></a>
 </p>
@@ -19,10 +20,11 @@
 ---
 
 ### 🚀 Sobre mí
-- 🎓 Estudiante de Ciencia e Ingeniería de Datos (UAM).  
-- 🤖 Trabajo con **ML clásico**, **Deep Learning** (PyTorch/TensorFlow) y **visualización**.  
-- 🧪 Prototipo rápido con buena ingeniería: tests, pipelines y notebooks limpios.  
-- 🧑‍🤝‍🧑 Comunidad: **GDG On Campus UAM** y open-source orientado a aprendizaje.  
+
+- 🎓 Estudiante de Ciencia e Ingeniería de Datos (UAM).
+- 🤖 Trabajo con **ML clásico**, **Deep Learning** (PyTorch/TensorFlow) y **visualización**.
+- 🧪 Prototipo rápido con buena ingeniería: tests, pipelines y notebooks limpios.
+- 🧑‍🤝‍🧑 Comunidad: **GDG On Campus UAM** y open-source orientado a aprendizaje.
 - 🎯 Abierto a **prácticas/colaboraciones** donde aportar impacto.
 
 <br/>
@@ -30,11 +32,12 @@
 ---
 
 ### 🧩 Tech que uso a diario
+
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
   <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white">
   <img alt="TensorFlow" src="https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=white">
-  <img alt="sklearn" src="https://img.shields.io/badge/sklearn-FAFAFA?logo=scikitlearn&logoColor=F7931E">
+  <img alt="scikit-learn" src="https://img.shields.io/badge/sklearn-FAFAFA?logo=scikitlearn&logoColor=F7931E">
   <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white">
   <img alt="Jupyter" src="https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white">
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=222">
@@ -54,7 +57,7 @@
 ---
 
 ### 🛠️ Proyectos destacados
-> Seleccionados de mis repos activos y con mejor “historia” técnica.
+> Selección de repos activos y con buena “historia” técnica.
 
 - 🌀 **DiffusionImaGen** — implementación modular de **modelos de difusión con SDEs** en PyTorch (VE/VP/SubVP, samplers PC/EM, condicional, imputación).  
   <sub>Repo:</sub> https://github.com/trentisiete/DiffusionImaGen
@@ -65,19 +68,19 @@
 - 🛰️ **CarWorkshopMVP** — MVP web (Astro) para un **taller mecánico**; estructura clara, multi-autor y despliegue sencillo.  
   <sub>Repo:</sub> https://github.com/trentisiete/CarWorkshopMVP
 
-- 🎨 **pAInt-Doodles** — frontend+backend para convertir **bocetos en “super dibujos”** (Vue + Python).  
-  <sub>Repo:</sub> https://github.com/trentisiete/pAInt-Doodles
-
 - ⚡ **RLProject (CityLearn)** — **Deep RL** para **gestión energética** de edificios: DQN/PPO/SAC, métricas y dashboard.  
   <sub>Repo:</sub> https://github.com/trentisiete/RLProject
-
-> ¿Te interesa colaborar? Abro issues con etiquetas **good first issue** y **help wanted**.
 
 <br/>
 
 ---
 
 ### 🤝 Colaboraciones
+
+- 🌐 **Web oficial GDG UAM — gdguam.es**  
+  Arquitectura y contribuciones en **Astro + React + Tailwind**, integración con analítica y despliegue CI/CD.  
+  <sub>Enlace:</sub> https://gdguam.es
+
 - 📱 **CarWorkshopApp (React Native, Expo)** — app multiplataforma para taller, contribuciones en TypeScript/UI/estructura.  
   <sub>Repo colectivo:</sub> https://github.com/zPy52/CarWorkshopApp
 
@@ -86,6 +89,7 @@
 ---
 
 ### 📊 Mis stats (auto-actualizadas)
+
 <div align="center">
 
 <!-- GitHub Readme Stats -->
@@ -123,6 +127,7 @@
 ---
 
 ### 🗺️ Cómo trabajo
+
 - Código claro y modular, **tests** desde el inicio, CI cuando aplica.  
 - Datos versionados y notebooks con **storytelling** (no solo outputs).  
 - “Primero que funcione, luego que vuele”: itero con métricas y visuales.
@@ -131,9 +136,14 @@
 
 ---
 
-### 🎉 Fun (pero útil)
-- Me encantan los dashboards que **explican** sus decisiones.  
-- Puedo hablar de ML con café… o de diseño de gráficos sin café ☕️📊
+### 🎉 Zona divertida (pero útil)
+
+- 🧠 **“Regex enjoyer”** y **docstring maximalista**.  
+- ⌨️ Mis commits llevan café de serie: si ves uno sin café, es *bugfix*.  
+- 🧩 Si abres un issue con el título **“not a bug, a feature request”**, prometo leerlo primero 😉.  
+- 🔍 *Easter egg*: este README tiene al menos **1** emoji por sección. ¿Los contaste?
+
+<br/>
 
 ---
 
