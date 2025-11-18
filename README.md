@@ -1,10 +1,10 @@
 <!-- README de perfil — trentisiete -->
 <!-- Repo: trentisiete/trentisiete · Público -->
 
-<h1 align="center">Hola, soy José 👋</h1>
+<h1 align="center">Trentisieteee!</h1>
 
 <p align="center">
-  Data Science & ML @ UAM · GDG On Campus UAM · Python · JS/TS · MLOps ligero · Visualización
+  Data Science & ML @ UAM · GDG On Campus UAM
 </p>
 
 <p align="center">
@@ -19,19 +19,19 @@
 
 ---
 
-### 🚀 Sobre mí
+### About me
 
-- 🎓 Estudiante de Ciencia e Ingeniería de Datos (UAM).
-- 🤖 Trabajo con **ML clásico**, **Deep Learning** (PyTorch/TensorFlow) y **visualización**.
-- 🧪 Prototipo rápido con buena ingeniería: tests, pipelines y notebooks limpios.
-- 🧑‍🤝‍🧑 Comunidad: **GDG On Campus UAM** y open-source orientado a aprendizaje.
-- 🎯 Abierto a **prácticas/colaboraciones** donde aportar impacto.
+- Data Science & Engineering Student at @UAM
+- Working on curiosity at @Unemployment
+- Machine Learning? Yeah BUT I SWEAR IT'S NOT PROMPTING ENGINEERING 😢🧅.
+- Community: **GDG On Campus UAM** is the HUB, join us and learn something new.
+- Looking for a job but please no more leetcode.
 
 <br/>
 
 ---
 
-### 🧩 Tech que uso a diario
+### Tech I don't usually use :) 
 
 <p>
   <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
@@ -56,39 +56,24 @@
 
 ---
 
-### 🛠️ Proyectos destacados
+### 🛠️ Check out my project (If you are reading this then you could see my repos).
 > Selección de repos activos y con buena “historia” técnica.
 
-- 🌀 **DiffusionImaGen** — implementación modular de **modelos de difusión con SDEs** en PyTorch (VE/VP/SubVP, samplers PC/EM, condicional, imputación).  
+- **DiffusionImaGen** — **SDEs Diffusion Models** implemented on PyTorch (VE/VP/SubVP, samplers PC/EM, conditional, imputation). I love this project.
   <sub>Repo:</sub> https://github.com/trentisiete/DiffusionImaGen
 
-- 📈 **QuantiFolio** — herramienta para **analizar/optimizar carteras**: backtesting, métricas (Sharpe/Sortino, drawdown), escenarios y **pesos dinámicos**.  
+- **QuantiFolio** — This is a tool to **analize/optimize funds**: backtesting, some metrics (Sharpe/Sortino, drawdown). This is the tool we used to win the Investor's League at UAM.  
   <sub>Repo:</sub> https://github.com/trentisiete/QuantiFolio
 
-- 🛰️ **CarWorkshopMVP** — MVP web (Astro) para un **taller mecánico**; estructura clara, multi-autor y despliegue sencillo.  
-  <sub>Repo:</sub> https://github.com/trentisiete/CarWorkshopMVP
-
-- ⚡ **RLProject (CityLearn)** — **Deep RL** para **gestión energética** de edificios: DQN/PPO/SAC, métricas y dashboard.  
+- **RLProject (CityLearn)** — **Deep RL** for **energetic management** of buildings: DQN/PPO/SAC.
+  Man -> RL -> Happy man
   <sub>Repo:</sub> https://github.com/trentisiete/RLProject
 
 <br/>
 
 ---
 
-### 🤝 Colaboraciones
-
-- 🌐 **Web oficial GDG UAM — gdguam.es**  
-  Arquitectura y contribuciones en **Astro + React + Tailwind**, integración con analítica y despliegue CI/CD.  
-  <sub>Enlace:</sub> https://gdguam.es
-
-- 📱 **CarWorkshopApp (React Native, Expo)** — app multiplataforma para taller, contribuciones en TypeScript/UI/estructura.  
-  <sub>Repo colectivo:</sub> https://github.com/zPy52/CarWorkshopApp
-
-<br/>
-
----
-
-### 📊 Mis stats
+### Stats (Call of Duty ts)
 
 <div align="center">
 
@@ -110,7 +95,7 @@
 
 <br/>
 
-<!-- Top Languages (Jupyter oculto) -->
+<!-- Top Languages -->
 <picture>
   <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=trentisiete&layout=compact&langs_count=8&hide=Jupyter%20Notebook&theme=radical" media="(prefers-color-scheme: dark)" />
   <source srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=trentisiete&layout=compact&langs_count=8&hide=Jupyter%20Notebook" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
@@ -124,33 +109,10 @@
 
 <br/>
 
----
-
-### 🗺️ Cómo trabajo
-
-- Código claro y modular, **tests** desde el inicio, CI cuando aplica.  
-- Datos versionados y notebooks con **storytelling** (no solo outputs).  
-- “Primero que funcione, luego que vuele”: itero con métricas y visuales.
-
-<br/>
-
----
-
-### 🎉 Zona divertida (pero útil)
-
-- 🧠 **“Regex enjoyer”** y **docstring maximalista**.  
-- ⌨️ Mis commits llevan café de serie: si ves uno sin café, es *bugfix*.  
-- 🧩 Si abres un issue con el título **“not a bug, a feature request”**, prometo leerlo primero 😉.  
-- 🔍 *Easter egg*: este README tiene al menos **1** emoji por sección. ¿Los contaste?
-
-<br/>
-
----
-
 
 <div align="center">
   <sub>
-    Este README se mostró en un <b>taller de GitHub</b> y cualquiera puede usarlo y adaptarlo.<br/>
+    This README was shown in a <b>GitHub workshop</b> and everyone could use it and adapt it<br/>
     Creado por <a href="https://gdguam.es">Google Developer Group On Campus (gdguam.es)</a>.
   </sub>
 
