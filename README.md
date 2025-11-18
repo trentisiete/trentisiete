@@ -57,7 +57,6 @@
 ---
 
 ### 🛠️ Check out my project (If you are reading this then you could see my repos).
-> Selección de repos activos y con buena “historia” técnica.
 
 - **DiffusionImaGen** — **SDEs Diffusion Models** implemented on PyTorch (VE/VP/SubVP, samplers PC/EM, conditional, imputation). I love this project.
   <sub>Repo:</sub> https://github.com/trentisiete/DiffusionImaGen
