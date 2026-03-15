@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://github.com/trentisiete?tab=followers"><img alt="Seguidores" src="https://img.shields.io/github/followers/trentisiete?style=flat&label=Seguidores"></a>
   <a href="https://github.com/trentisiete"><img alt="Estrellas" src="https://img.shields.io/github/stars/trentisiete?affiliations=OWNER%2CCOLLABORATOR&style=flat&label=Estrellas"></a>
-  <a href="https://joserbelaez.com"><img alt="José Arbelaez" src="https://img.shields.io/badge/Website-gdguam.es-34A853?logo=google&logoColor=white"></a>
+  <a href="https://joserbelaez.com"><img alt="José Arbelaez" src="https://img.shields.io/badge/Website-josearbelaez.com-34A853?logo=google&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/TODO-linkedin/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Conecta-0A66C2?logo=linkedin&logoColor=white"></a>
   <a href="mailto:TODO-email"><img alt="Email" src="https://img.shields.io/badge/Contacto-Email-informational"></a>
 </p>
