@@ -10,7 +10,7 @@
 <p align="center">
   <a href="https://github.com/trentisiete?tab=followers"><img alt="Seguidores" src="https://img.shields.io/github/followers/trentisiete?style=flat&label=Seguidores"></a>
   <a href="https://github.com/trentisiete"><img alt="Estrellas" src="https://img.shields.io/github/stars/trentisiete?affiliations=OWNER%2CCOLLABORATOR&style=flat&label=Estrellas"></a>
-  <a href="https://gdguam.es"><img alt="GDG UAM" src="https://img.shields.io/badge/Website-gdguam.es-34A853?logo=google&logoColor=white"></a>
+  <a href="https://joserbelaez.com"><img alt="José Arbelaez" src="https://img.shields.io/badge/Website-gdguam.es-34A853?logo=google&logoColor=white"></a>
   <a href="https://www.linkedin.com/in/TODO-linkedin/"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-Conecta-0A66C2?logo=linkedin&logoColor=white"></a>
   <a href="mailto:TODO-email"><img alt="Email" src="https://img.shields.io/badge/Contacto-Email-informational"></a>
 </p>
@@ -23,7 +23,7 @@
 
 - Data Science & Engineering Student at @UAM
 - Working on curiosity at @Unemployment
-- Machine Learning? Yeah BUT I SWEAR IT'S NOT PROMPTING ENGINEERING 😢🧅.
+- Machine Learning? Yeah BUT I SWEAR IT'S NOT ONLY PROMPTING ENGINEERING 😢🧅.
 - Community: **GDG On Campus UAM** is the HUB, join us and learn something new.
 - Looking for a job but please no more leetcode.
 
@@ -31,7 +31,7 @@
 
 ---
 
-### 🛠️ Check out my project (If you are reading this then you could see my repos).
+### 🛠️ Check out my project.
 
 - **DiffusionImaGen** — **SDEs Diffusion Models** implemented on PyTorch (VE/VP/SubVP, samplers PC/EM, conditional, imputation). I love this project.
   <sub>Repo:</sub> https://github.com/trentisiete/DiffusionImaGen
