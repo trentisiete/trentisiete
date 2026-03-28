@@ -1,0 +1,118 @@
+                    font-size: 16px;
+                    line-height: 1.6;
+                }
+                .highlight {
+                    color: #FFD9CC;
+                    font-weight: 500;
+                }
+                .link {
+                    color: #FFD9CC;
+                    text-decoration: none;
+                }
+                .link:hover {
+                    text-decoration: underline;
+                }
+            </style>
+            <div class="container">
+                <div class="terminal-header">
+                    <div class="terminal-circle terminal-circle-red"></div>
+                    <div class="terminal-circle terminal-circle-yellow"></div>
+                    <div class="terminal-circle terminal-circle-green"></div>
+                </div>
+                <div class="terminal_command_wrap">
+                    <div class="terminal_command_arrow">&gt;</div>
+                    <div class="spinner" id="spinner">⣾</div>
+                    <div class="terminal_command_text" id="command"></div>
+                    <div class="cursor" id="commandCursor"></div>
+                </div>
+                <div class="terminal_command_output" id="output">
+                    <div class="output-line" id="outputLine1" style="display: none;">
+                        <div class="bullet">⏺</div>
+                        <div class="output-text" id="line1"></div>
+                    </div>
+                    <div class="output-line" id="outputLine2" style="display: none;">
+                        <div class="bullet">⏺</div>
+                        <div class="output-text" id="line2"></div>
+                        <div class="cursor" id="cursor2" style="display: none;"></div>
+                    </div>
+                    <div class="output-line" id="outputLine3" style="display: none;">
+                        <div class="bullet">⏺</div>
+                        <div class="output-text" id="line3"></div>
+                    </div>
+                </div>
+            </div>
+            <script><![CDATA[
+                (function() {
+                    const spinnerSymbols = ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷'];
+                    let spinnerIndex = 0;
+                    const spinner = document.getElementById('spinner');
+                    const spinnerInterval = setInterval(function() {
+                        spinner.textContent = spinnerSymbols[spinnerIndex];
+                        spinnerIndex = (spinnerIndex + 1) % spinnerSymbols.length;
+                    }, 350);
+                    // Type with natural pauses between words
+                    function typeWithPauses(element, words, cursor, callback) {
+                        if (cursor) cursor.style.display = 'inline-block';
+                        let wordIndex = 0;
+                        function typeWord() {
+                            if (wordIndex < words.length) {
+                                const word = words[wordIndex];
+                                let charIndex = 0;
+                                function typeChar() {
+                                    if (charIndex < word.length) {
+                                        element.innerHTML += word.charAt(charIndex);
+                                        charIndex++;
+                                        setTimeout(typeChar, 50 + Math.random() * 50);
+                                    } else {
+                                        wordIndex++;
+                                        // Longer pause between words (like thinking)
+                                        setTimeout(typeWord, 200 + Math.random() * 200);
+                                    }
+                                }
+                                typeChar();
+                            } else {
+                                if (cursor) cursor.style.display = 'none';
+                                if (callback) callback();
+                            }
+                        }
+                        typeWord();
+                    }
+                    // Command typing
+                    typeWithPauses(
+                        document.getElementById('command'),
+                        ['whoami'],
+                        document.getElementById('commandCursor'),
+                        function() {
+                            setTimeout(function() {
+                                document.getElementById('commandCursor').style.display = 'none';
+                                setTimeout(function() {
+                                    document.getElementById('outputLine1').style.display = 'flex';
+                                    document.getElementById('line1').innerHTML = '<span class="highlight">Artem Zhutov</span> – Physics PhD × Automation Systems';
+                                    setTimeout(function() {
+                                        document.getElementById('outputLine2').style.display = 'flex';
+                                        // Type word by word with pauses
+                                        typeWithPauses(
+                                            document.getElementById('line2'),
+                                            ['Building ', '• ', 'Demoing ', '• ', 'Shipping ', 'AI ', 'agent ', 'workflows'],
+                                            document.getElementById('cursor2'),
+                                            function() {
+                                                setTimeout(function() {
+                                                    document.getElementById('outputLine3').style.display = 'flex';
+                                                    document.getElementById('line3').innerHTML = 'Watch: <a href="https://youtube.com/@ArtemXTech" target="_blank" class="link highlight">youtube.com/@ArtemXTech</a>';
+                                                    setTimeout(function() {
+                                                        clearInterval(spinnerInterval);
+                                                        spinner.textContent = '✓';
+                                                    }, 400);
+                                                }, 300);
+                                            }
+                                        );
+                                    }, 400);
+                                }, 150);
+                            }, 400);
+                        }
+                    );
+                })();
+            ]]></script>
+        </div>
+    </foreignObject>
+</svg>
