@@ -1,53 +1,219 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Terminal header with animation">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#1a1a1a"/>
-      <stop offset="100%" stop-color="#2d2d2d"/>
-    </linearGradient>
-    <style><![CDATA[
-      text {
-        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-      }
-      .accent { fill: #FF6B35; }
-      .muted { fill: #B8B8B8; }
-      .highlight { fill: #FFD9CC; font-weight: 600; }
-      .cmd { fill: #FFD9CC; font-size: 32px; }
-      .cursor { stroke: #FFD9CC; stroke-width: 2; }
-    ]]></style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Terminal animated header">
+  <foreignObject x="0" y="0" width="1200" height="300">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="width:1200px;height:300px;">
+      <style>
+        .container {
+          width: 1200px;
+          height: 300px;
+          box-sizing: border-box;
+          padding: 24px 32px;
+          border-radius: 12px;
+          background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+          font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        }
 
-  <rect width="1200" height="300" rx="12" fill="url(#bg)"/>
-  <rect x="32" y="24" width="1136" height="44" rx="9" fill="#000" fill-opacity="0.3"/>
-  <circle cx="56" cy="46" r="6" fill="#FF5F56"/>
-  <circle cx="80" cy="46" r="6" fill="#FFBD2E"/>
-  <circle cx="104" cy="46" r="6" fill="#27C93F"/>
+        .terminal-header {
+          height: 44px;
+          border-radius: 9px;
+          background: rgba(0, 0, 0, 0.30);
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          padding: 0 14px;
+          box-sizing: border-box;
+        }
 
-  <text x="42" y="117" class="accent" font-size="32" font-weight="700">&gt;</text>
+        .terminal-circle {
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
 
-  <!-- Spinner always visible + animated rotation -->
-  <g transform="translate(76 104)">
-    <circle cx="10" cy="10" r="8" fill="none" stroke="#FF6B35" stroke-opacity="0.25" stroke-width="3"/>
-    <path d="M10 2 A8 8 0 0 1 17.2 7" fill="none" stroke="#FF6B35" stroke-width="3" stroke-linecap="round">
-      <animateTransform attributeName="transform" type="rotate" from="0 10 10" to="360 10 10" dur="1s" repeatCount="indefinite"/>
-    </path>
-  </g>
+        .terminal-circle-red { background: #FF5F56; }
+        .terminal-circle-yellow { background: #FFBD2E; }
+        .terminal-circle-green { background: #27C93F; }
 
-  <text x="116" y="117" class="cmd">whoami</text>
-  <line x1="212" y1="92" x2="212" y2="118" class="cursor">
-    <animate attributeName="opacity" values="1;1;0;0;1" dur="0.9s" repeatCount="indefinite"/>
-  </line>
+        .terminal_command_wrap {
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          min-height: 26px;
+        }
 
-  <!-- Content is visible by default so it still shows even if animations are disabled -->
-  <text x="52" y="158" class="accent" font-size="20">⏺</text>
-  <text x="76" y="158" class="muted" font-size="24"><tspan class="highlight">José Arbeláez</tspan> – Data Science &amp; Engineering</text>
+        .terminal_command_arrow {
+          color: #FF6B35;
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 1;
+        }
 
-  <text x="52" y="198" class="accent" font-size="20">⏺</text>
-  <text x="76" y="198" class="muted" font-size="24">Building • Shipping AI Agents workflows</text>
+        .spinner {
+          color: #FF6B35;
+          font-size: 18px;
+          line-height: 1;
+          min-width: 1ch;
+        }
 
-  <text x="52" y="238" class="accent" font-size="20">⏺</text>
-  <text x="76" y="238" class="muted" font-size="24">Watch:</text>
-  <a href="https://www.josearbelaez.com/es/" target="_blank">
-    <text x="176" y="238" class="highlight" font-size="24">https://www.josearbelaez.com/es/</text>
-  </a>
+        .terminal_command_text {
+          color: #FFD9CC;
+          font-size: 21px;
+          line-height: 1;
+          white-space: pre;
+        }
+
+        .cursor {
+          width: 10px;
+          height: 20px;
+          border-right: 2px solid #FFD9CC;
+          animation: blink 0.9s step-end infinite;
+          display: inline-block;
+        }
+
+        .terminal_command_output {
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .output-line {
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          font-size: 18px;
+        }
+
+        .bullet {
+          color: #FF6B35;
+          line-height: 1.5;
+          flex-shrink: 0;
+        }
+
+        .output-text {
+          color: #B8B8B8;
+          line-height: 1.5;
+          white-space: pre-wrap;
+          word-break: break-word;
+        }
+
+        .highlight {
+          color: #FFD9CC;
+          font-weight: 500;
+        }
+
+        .link {
+          color: #FFD9CC;
+          text-decoration: none;
+        }
+
+        .link:hover {
+          text-decoration: underline;
+        }
+
+        @keyframes blink {
+          50% { border-color: transparent; }
+        }
+      </style>
+
+      <div class="container">
+        <div class="terminal-header">
+          <div class="terminal-circle terminal-circle-red"></div>
+          <div class="terminal-circle terminal-circle-yellow"></div>
+          <div class="terminal-circle terminal-circle-green"></div>
+        </div>
+
+        <div class="terminal_command_wrap">
+          <div class="terminal_command_arrow">&gt;</div>
+          <div class="spinner" id="spinner">⣾</div>
+          <div class="terminal_command_text" id="command"></div>
+          <div class="cursor" id="commandCursor"></div>
+        </div>
+
+        <div class="terminal_command_output" id="output">
+          <div class="output-line" id="outputLine1" style="display:none;">
+            <div class="bullet">⏺</div>
+            <div class="output-text" id="line1"></div>
+          </div>
+
+          <div class="output-line" id="outputLine2" style="display:none;">
+            <div class="bullet">⏺</div>
+            <div class="output-text" id="line2"></div>
+            <div class="cursor" id="cursor2" style="display:none;"></div>
+          </div>
+
+          <div class="output-line" id="outputLine3" style="display:none;">
+            <div class="bullet">⏺</div>
+            <div class="output-text" id="line3"></div>
+          </div>
+        </div>
+      </div>
+
+      <script><![CDATA[
+        (function () {
+          var spinnerSymbols = ['⣾', '⣽', '⣻', '⢿', '⡿', '⣟', '⣯', '⣷'];
+          var spinnerIndex = 0;
+          var spinner = document.getElementById('spinner');
+
+          var spinnerInterval = setInterval(function () {
+            spinner.textContent = spinnerSymbols[spinnerIndex];
+            spinnerIndex = (spinnerIndex + 1) % spinnerSymbols.length;
+          }, 120);
+
+          function typeText(element, text, speed, done) {
+            var i = 0;
+            function step() {
+              if (i < text.length) {
+                element.textContent += text.charAt(i);
+                i += 1;
+                setTimeout(step, speed);
+              } else if (done) {
+                done();
+              }
+            }
+            step();
+          }
+
+          var command = document.getElementById('command');
+          var commandCursor = document.getElementById('commandCursor');
+
+          typeText(command, 'whoami', 85, function () {
+            commandCursor.style.display = 'none';
+
+            setTimeout(function () {
+              var line1Wrap = document.getElementById('outputLine1');
+              var line1 = document.getElementById('line1');
+              line1Wrap.style.display = 'flex';
+              line1.innerHTML = '<span class="highlight">José Arbeláez</span> – Data Science &amp; Engineering';
+
+              setTimeout(function () {
+                var line2Wrap = document.getElementById('outputLine2');
+                var line2 = document.getElementById('line2');
+                var cursor2 = document.getElementById('cursor2');
+                line2Wrap.style.display = 'flex';
+                cursor2.style.display = 'inline-block';
+
+                typeText(line2, 'Building • Shipping AI Agents workflows', 38, function () {
+                  cursor2.style.display = 'none';
+
+                  setTimeout(function () {
+                    var line3Wrap = document.getElementById('outputLine3');
+                    var line3 = document.getElementById('line3');
+                    line3Wrap.style.display = 'flex';
+                    line3.innerHTML = 'Watch: <a href="https://www.josearbelaez.com/es/" target="_blank" class="link highlight">https://www.josearbelaez.com/es/</a>';
+
+                    setTimeout(function () {
+                      clearInterval(spinnerInterval);
+                      spinner.textContent = '✓';
+                    }, 450);
+                  }, 260);
+                });
+              }, 350);
+            }, 250);
+          });
+        })();
+      ]]></script>
+    </div>
+  </foreignObject>
 </svg>
