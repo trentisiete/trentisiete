@@ -98,8 +98,6 @@
                 style="opacity:0; animation: spinnerFrames 1.2s linear infinite; animation-delay: 1.05s;">⣷</text>
 
           <!-- Done check -->
-          <text class="mono" x="0" y="0" font-size="18" fill="#27C93F" dominant-baseline="text-before-edge"
-                style="opacity:0; animation: spinnerDone 0s linear 5s forwards;">✓</text>
         </g>
 
         <!-- Typed 'whoami' -->
@@ -127,7 +125,7 @@
         <g class="line line2" transform="translate(0,28)">
           <text x="0" y="0" fill="#FF6B35" dominant-baseline="text-before-edge">⏺</text>
           <g clip-path="url(#typeLineClip)">
-            <text x="24" y="50" fill="#B8B8B8" dominant-baseline="text-before-edge">
+            <text x="24" y="30" fill="#B8B8B8" dominant-baseline="text-before-edge">
               Building • Demoing • Shipping AI agent systems
             </text>
           </g>
@@ -136,7 +134,7 @@
         <!-- Line 3 -->
         <g class="line line3" transform="translate(0,56)">
           <text x="0" y="0" fill="#FF6B35" dominant-baseline="text-before-edge">⏺</text>
-          <text x="24" y="90" fill="#B8B8B8" dominant-baseline="text-before-edge">
+          <text x="24" y="60" fill="#B8B8B8" dominant-baseline="text-before-edge">
             <tspan>Watch: </tspan>
             <tspan fill="#FFD9CC" font-weight="600">josearbelaez.com</tspan>
           </text>
