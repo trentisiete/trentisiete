@@ -1,1 +1,1 @@
-![Terminal Header](./img/header.svg?v=5)
+![Terminal Header](./img/header-with-js.svg?v=2)
