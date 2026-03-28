@@ -47,6 +47,21 @@
     <clipPath id="cardClip">
       <rect x="0" y="0" width="800" height="240" rx="10" ry="10"/>
     </clipPath>
+
+    <!-- Clip paths used by animations -->
+    <clipPath id="cmdClip">
+      <!-- Animated width for "whoami" reveal -->
+      <rect x="0" y="0" width="0" height="28">
+        <animate attributeName="width" from="0" to="72" dur="1s" begin="0.3s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <clipPath id="typeLineClip">
+      <!-- Animated width for second line typing -->
+      <rect x="24" y="0" width="0" height="22">
+        <animate attributeName="width" from="0" to="600" dur="2.5s" begin="2.0s" fill="freeze"/>
+      </rect>
+    </clipPath>
   </defs>
 
   <g clip-path="url(#cardClip)">
@@ -61,86 +76,72 @@
 
       <!-- Command line -->
       <g class="fadeIn mono" transform="translate(0,72)">
-        <text x="0" y="0" font-size="20" fill="#FF6B35" font-weight="700" dominant-baseline="hanging">&gt;</text>
+        <text x="0" y="0" font-size="20" fill="#FF6B35" font-weight="700" dominant-baseline="text-before-edge">&gt;</text>
 
         <!-- Spinner -->
         <g transform="translate(24,0)">
-          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="text-before-edge"
                 style="animation: spinnerFrames 1.2s linear infinite;">⣾</text>
-          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="text-before-edge"
                 style="opacity:0; animation: spinnerFrames 1.2s linear infinite; animation-delay: 0.15s;">⣽</text>
-          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="text-before-edge"
                 style="opacity:0; animation: spinnerFrames 1.2s linear infinite; animation-delay: 0.30s;">⣻</text>
-          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="text-before-edge"
                 style="opacity:0; animation: spinnerFrames 1.2s linear infinite; animation-delay: 0.45s;">⢿</text>
-          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="text-before-edge"
                 style="opacity:0; animation: spinnerFrames 1.2s linear infinite; animation-delay: 0.60s;">⡿</text>
-          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="text-before-edge"
                 style="opacity:0; animation: spinnerFrames 1.2s linear infinite; animation-delay: 0.75s;">⣟</text>
-          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="text-before-edge"
                 style="opacity:0; animation: spinnerFrames 1.2s linear infinite; animation-delay: 0.90s;">⣯</text>
-          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#FF6B35" dominant-baseline="text-before-edge"
                 style="opacity:0; animation: spinnerFrames 1.2s linear infinite; animation-delay: 1.05s;">⣷</text>
 
           <!-- Done check -->
-          <text class="mono" x="0" y="0" font-size="18" fill="#27C93F" dominant-baseline="hanging"
+          <text class="mono" x="0" y="0" font-size="18" fill="#27C93F" dominant-baseline="text-before-edge"
                 style="opacity:0; animation: spinnerDone 0s linear 5s forwards;">✓</text>
         </g>
 
         <!-- Typed 'whoami' -->
         <g transform="translate(48,0)">
-          <clipPath id="cmdClip">
-            <rect x="0" y="0" width="0" height="28">
-              <animate attributeName="width" from="0" to="72" dur="1s" begin="0.3s" fill="freeze"/>
-            </rect>
-          </clipPath>
-
           <g clip-path="url(#cmdClip)">
-            <text class="mono" x="0" y="0" font-size="20" fill="#FFD9CC" dominant-baseline="hanging">whoami</text>
+            <text class="mono" x="0" y="0" font-size="20" fill="#FFD9CC" dominant-baseline="text-before-edge">whoami</text>
           </g>
 
-          <text class="mono cursorBlink cursorHide" x="72" y="0" font-size="20" fill="#FFD9CC" dominant-baseline="hanging">▌</text>
+          <text class="mono cursorBlink cursorHide" x="72" y="0" font-size="20" fill="#FFD9CC" dominant-baseline="text-before-edge">▌</text>
         </g>
       </g>
 
-          <!-- Output -->
-    <g class="mono" transform="translate(0,118)" font-size="16">
-      <!-- Tune these if you want tighter/looser spacing -->
-      <!-- Using text-before-edge is more consistent in GitHub's renderer -->
-      <g class="line line1">
-        <text x="0" y="0" fill="#FF6B35" dominant-baseline="text-before-edge">⏺</text>
-        <text x="24" y="0" fill="#B8B8B8" dominant-baseline="text-before-edge">
-          <tspan fill="#FFD9CC" font-weight="600">José Arbeláez</tspan>
-          <tspan> – Data Science &amp; Engineering</tspan>
-        </text>
-      </g>
-    
-      <!-- line height: 28px -->
-      <g class="line line2" transform="translate(0,28)">
-        <text x="0" y="0" fill="#FF6B35" dominant-baseline="text-before-edge">⏺</text>
-    
-        <clipPath id="typeLineClip">
-          <rect x="24" y="0" width="0" height="22">
-            <animate attributeName="width" from="0" to="600" dur="2.5s" begin="2.0s" fill="freeze"/>
-          </rect>
-        </clipPath>
-    
-        <g clip-path="url(#typeLineClip)">
+      <!-- Output (fixed spacing, no overlap) -->
+      <g class="mono" transform="translate(0,118)" font-size="16">
+        <!-- Line 1 -->
+        <g class="line line1">
+          <text x="0" y="0" fill="#FF6B35" dominant-baseline="text-before-edge">⏺</text>
           <text x="24" y="0" fill="#B8B8B8" dominant-baseline="text-before-edge">
-            Building • Demoing • Shipping AI agent systems
+            <tspan fill="#FFD9CC" font-weight="600">José Arbeláez</tspan>
+            <tspan> – Data Science &amp; Engineering</tspan>
+          </text>
+        </g>
+
+        <!-- Line 2 (typewriter reveal) -->
+        <g class="line line2" transform="translate(0,28)">
+          <text x="0" y="0" fill="#FF6B35" dominant-baseline="text-before-edge">⏺</text>
+          <g clip-path="url(#typeLineClip)">
+            <text x="24" y="0" fill="#B8B8B8" dominant-baseline="text-before-edge">
+              Building • Demoing • Shipping AI agent systems
+            </text>
+          </g>
+        </g>
+
+        <!-- Line 3 -->
+        <g class="line line3" transform="translate(0,56)">
+          <text x="0" y="0" fill="#FF6B35" dominant-baseline="text-before-edge">⏺</text>
+          <text x="24" y="0" fill="#B8B8B8" dominant-baseline="text-before-edge">
+            <tspan>Watch: </tspan>
+            <tspan fill="#FFD9CC" font-weight="600">josearbelaez.com</tspan>
           </text>
         </g>
       </g>
-    
-      <!-- line height: 28px -->
-      <g class="line line3" transform="translate(0,56)">
-        <text x="0" y="0" fill="#FF6B35" dominant-baseline="text-before-edge">⏺</text>
-        <text x="24" y="0" fill="#B8B8B8" dominant-baseline="text-before-edge">
-          <tspan>Watch: </tspan>
-          <tspan fill="#FFD9CC" font-weight="600">josearbelaez.com</tspan>
-        </text>
-      </g>
-    </g>
     </g>
   </g>
 </svg>
